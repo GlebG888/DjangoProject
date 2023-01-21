@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .menu {
+        border: 1px solid black;
+        }
+        .content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        footer {
+        border: 1px solid blue;
+        }
+    </style>
 </head>
 <body>
+<nav class="menu">
+    <a href="{% url 'home' %}"> Домой </a>
+    <a href="{% url 'items_list' %}"> Назад </a>
+<nav
 <h1> Страница товара </h1>
 Название: {{ item.name }} <br>
 Бренд: {{ item.brand }} <br>
 Количество: {{ item.count }} <br>
-<a href="/items"> Назад </a>
-
+    <flooter>
+          (c)Грошев Г.Е. 2023г.
+    </flooter>
 </body>
 </html>

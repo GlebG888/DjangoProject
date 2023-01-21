@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <style>
+        .menu {
+        border: 1px solid black;
+        }
+        .content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        footer {
+        border: 1px solid blue;
+        }
+    </style>
 </head>
 <body>
-welcome to the club!
-<h1>"Изучаем django"</h1> <strong>Автор</strong>: <i>Алеша попович</i>
+<nav class="menu">
+    <a href="{% url 'items_list' %}"> Список товаров</a>
+    </ol>
+</nav>
+<main class="content">
+    welcome to the club!
+</main>
+<flooter>
+    (c)Грошев Г.Е. 2023г.
+</flooter>
+<!--<h1>"Изучаем django"</h1> <strong>Автор</strong>: <i>Алеша попович</i>-->
 </body>
 </html>
